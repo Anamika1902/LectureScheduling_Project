@@ -1,0 +1,130 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    flex-direction: column;
+    text-align: center;
+    color: #333;
+}
+
+h2 {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+
+
+.container {
+    background-color: #fff;
+    padding: 30px; 
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 360px; 
+    margin-top: 10px;
+    border: 2px solid #fff;  
+    text-align: left;
+}
+
+input[type="text"], 
+input[type="email"], 
+input[type="password"], 
+select {
+    width: 100%;
+    padding: 12px; 
+    margin: 10px 0; 
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+    background-color: #fafafa;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+input[type="password"]:focus, 
+input[type="text"]:focus, 
+input[type="email"]:focus, 
+select:focus {
+    border-color: #fff; 
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); 
+    outline: none;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 12px;  
+    background-color: #FF5733;  
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 15px;
+}
+
+/* Button Hover Effect */
+button:hover {
+    background-color: #C70039;  
+    transform: translateY(-2px);
+}
+
+
+p {
+    font-size: 14px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+.success-message {
+    color: green;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Login Link */
+a {
+    text-decoration: none;
+    color: hsla(241, 85%, 47%, 0.957);  
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+.container:hover {
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 30px;
+        width: 90%;
+    }
+}
+
